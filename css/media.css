@@ -1,0 +1,108 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .logo svg {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .menu {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .sandwich {
+    width: 30px;
+    height: 2px;
+  }
+  
+  .sw-topper {
+    width: 30px;
+    height: 2px;
+    top: -10px;
+    border-radius: 2px 2px 2px 2px;
+  }
+  
+  .sw-bottom {
+    width: 30px;
+    height: 2px;
+    top: -1px;
+    border-radius: 2px 2px 2px 2px;
+  }
+  
+  .sw-footer {
+    width: 30px;
+    height: 2px;
+    top: 8px;
+    border-radius: 2px 2px 2px 2px;
+  }
+  
+  .sandwich.active .sw-topper {
+    top: 2px;
+  }
+  
+  .sandwich.active .sw-bottom {
+    top: 0;
+  }
+  
+  .sandwich.active .sw-footer {
+    top: 2px;
+  }
+  
+  .top-wrapper .top-description .top-centered .top-title h1 {
+    font-size: 2.5rem;
+  }
+  
+  .top-wrapper .top-description .top-centered .top-title p {
+    font-size: 1.25rem;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

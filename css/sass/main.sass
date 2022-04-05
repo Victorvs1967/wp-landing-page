@@ -1,0 +1,204 @@
+@import "bourbon/bourbon"
+
+body
+	font-family: "Raleway", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.hidden
+	display: none
+
+section,
+.main__head
+	position: relative
+
+section
+	width: 100%
+	height: 100vh
+	padding: 80px 0
+	.sec-title
+		margin: 0
+		margin-bottom: 10px
+		text-align: center
+		text-transform: uppercase
+		font-size: 3rem
+	.sec-description
+		margin-bottom: 120px
+		text-align: center
+		text-transform: uppercase
+		font-size: 2rem
+		font-weight: 700
+		position: relative
+		&::after
+			content: ""
+			position: absolute
+			top: 70px
+			left: 50%
+			transform: translateX(-50%)
+			width: 200px
+			height: 2px
+
+.main__head
+	min-height: 620px
+	padding-top: 20px
+
+.loader
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	width: 100%
+	height: 100%
+	background: none repeat scroll 0 0 #ffffff
+	z-index: 9999
+	.loader_inner
+		background-image: url("../img/preloader.gif")
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: cover
+		background-color: #fff
+		height: 60px
+		width: 60px
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+		position: absolute
+
+.logo
+	float: left
+	position: fixed
+	top: 20px
+	left: 30px
+	z-index: 100
+	svg
+		height: 60px
+		width: 60px
+		position: relative
+		z-index: 400
+
+.menu
+	width: 60px
+	height: 60px
+	float: right
+	position: fixed
+	top: 20px
+	right: 30px
+	z-index: 200
+	border: none
+	span
+		display: block
+
+$width: 40px
+$height: 4px
+
+.sandwich 
+  width: $width
+  height: $width
+  margin: auto
+
+.sw-topper 
+	position: relative
+	width: $width
+	height: $height
+	top: $height
+	background: #fff
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+
+.sw-bottom 
+	position: relative
+	width: $width
+	height: $height
+	top: $height * 4
+	background: #fff
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	transition-delay: 0.2s, 0s
+
+.sw-footer 
+	position: relative
+	width: $width
+	height: $height
+	background: #fff
+	top: $height * 7
+	background: #fff
+	border-radius: 4px 4px 4px 4px
+	transition: all 0.5s
+	transition-delay: 0.1s
+
+.sandwich.active
+	margin: 10px auto
+	.sw-topper 
+		top: $height * 4
+		transform: rotate(45deg)
+	.sw-bottom 
+		top: $height * 3
+		transform: rotate(-45deg)
+	.sw-footer 
+		opacity: 0
+		top: 0
+		transform: rotate(180deg)
+
+.menu__top
+	position: fixed
+	top: 0
+	right: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(0, 0, 0, .9)
+	z-index: 150
+	display: none
+	ul
+		list-style: none
+		padding: 0
+		margin: 0
+		margin-top: 120px
+		text-align: center
+		a
+			color: #ffffff
+			display: block
+			padding: 20px 0
+			text-transform: uppercase
+			transition: all 0.5s
+
+.top-wrapper
+	position: absolute
+	top: 0
+	left: 0
+	display: table
+	width: 100%
+	height: 50em
+	z-index: 100
+	.top-description
+		display: table-row
+		.top-centered
+			display: table-cell
+			text-align: center
+			vertical-align: middle
+			.top-title
+				display: inline-block
+				h1
+					display: inline-block
+					padding: 20px 30px
+					font-size: 4rem
+					border: 6px solid #ffffff
+					box-shadow: rgba(0, 0, 0, .25) 0 0 0 1000px
+				p
+					margin: 0
+					font-size: 2rem
+
+.footer
+	padding: 50px 0

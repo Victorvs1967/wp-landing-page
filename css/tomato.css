@@ -1,0 +1,95 @@
+body {
+  color: #222;
+  letter-spacing: 1px;
+}
+
+a {
+  color: #FF6347;
+}
+
+p {
+  color: #888;
+}
+
+.color_element {
+  color: #FF6347;
+}
+
+.color_bg {
+  background-color: #FF6347;
+}
+
+.color_border {
+  border-color: #FF6347;
+}
+
+.main_color_bg {
+  background-color: #222;
+}
+
+svg {
+  fill: rgba(255, 255, 255, 0.8);
+}
+
+svg circle {
+  stroke: #888;
+}
+
+svg path {
+  fill: #888;
+}
+
+.menu {
+  background-color: #222;
+}
+
+.menu__top a:hover {
+  color: #FF6347;
+  background-color: rgba(255, 255, 255, 0.1);
+  letter-spacing: 4px;
+}
+
+.top-title h1 {
+  color: #FAFAFA;
+}
+
+.top-title p {
+  color: #FAFAFA;
+  letter-spacing: 5px;
+}
+
+.bg-light {
+  background-color: #FAFAFA;
+  color: #222;
+}
+
+.bg-dark {
+  background-color: #888;
+  color: #FAFAFA;
+}
+
+.bg-black {
+  background-color: #222;
+  color: #FAFAFA;
+}
+
+.sec-description {
+  letter-spacing: 4px;
+}
+
+.bg-light .sec-description::after {
+  background: #222;
+}
+
+.bg-light .sec-description::after a {
+  color: #222;
+}
+
+.bg-dark .sec-description::after {
+  background-color: #FAFAFA;
+}
+
+.bg-dark .sec-description::after a {
+  color: #FAFAFA;
+}
+/*# sourceMappingURL=tomato.css.map */

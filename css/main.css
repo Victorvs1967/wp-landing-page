@@ -1,0 +1,266 @@
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.42857;
+  -webkit-font-smoothing: antialised;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: red;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: green;
+}
+
+.hidden {
+  display: none;
+}
+
+section,
+.main__head {
+  position: relative;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  padding: 80px 0;
+}
+
+section .sec-title {
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+section .sec-description {
+  margin-bottom: 120px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  position: relative;
+}
+
+section .sec-description::after {
+  content: "";
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 200px;
+  height: 2px;
+}
+
+.main__head {
+  min-height: 620px;
+  padding-top: 20px;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: none repeat scroll 0 0 #ffffff;
+  z-index: 9999;
+}
+
+.loader .loader_inner {
+  background-image: url("../img/preloader.gif");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #fff;
+  height: 60px;
+  width: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+
+.logo {
+  float: left;
+  position: fixed;
+  top: 20px;
+  left: 30px;
+  z-index: 100;
+}
+
+.logo svg {
+  height: 60px;
+  width: 60px;
+  position: relative;
+  z-index: 400;
+}
+
+.menu {
+  width: 60px;
+  height: 60px;
+  float: right;
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  z-index: 200;
+  border: none;
+}
+
+.menu span {
+  display: block;
+}
+
+.sandwich {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+}
+
+.sw-topper {
+  position: relative;
+  width: 40px;
+  height: 4px;
+  top: 4px;
+  background: #fff;
+  border-radius: 4px 4px 4px 4px;
+  -webkit-transition: top 0.2s, -webkit-transform 0.5s;
+  transition: top 0.2s, -webkit-transform 0.5s;
+  transition: transform 0.5s, top 0.2s;
+  transition: transform 0.5s, top 0.2s, -webkit-transform 0.5s;
+}
+
+.sw-bottom {
+  position: relative;
+  width: 40px;
+  height: 4px;
+  top: 16px;
+  background: #fff;
+  border-radius: 4px 4px 4px 4px;
+  -webkit-transition: top 0.2s, -webkit-transform 0.5s;
+  transition: top 0.2s, -webkit-transform 0.5s;
+  transition: transform 0.5s, top 0.2s;
+  transition: transform 0.5s, top 0.2s, -webkit-transform 0.5s;
+  -webkit-transition-delay: 0.2s, 0s;
+          transition-delay: 0.2s, 0s;
+}
+
+.sw-footer {
+  position: relative;
+  width: 40px;
+  height: 4px;
+  background: #fff;
+  top: 28px;
+  background: #fff;
+  border-radius: 4px 4px 4px 4px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.sandwich.active {
+  margin: 10px auto;
+}
+
+.sandwich.active .sw-topper {
+  top: 16px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.sandwich.active .sw-bottom {
+  top: 12px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.sandwich.active .sw-footer {
+  opacity: 0;
+  top: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.menu__top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 150;
+  display: none;
+}
+
+.menu__top ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 120px;
+  text-align: center;
+}
+
+.menu__top ul a {
+  color: #ffffff;
+  display: block;
+  padding: 20px 0;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.top-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: table;
+  width: 100%;
+  height: 50em;
+  z-index: 100;
+}
+
+.top-wrapper .top-description {
+  display: table-row;
+}
+
+.top-wrapper .top-description .top-centered {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.top-wrapper .top-description .top-centered .top-title {
+  display: inline-block;
+}
+
+.top-wrapper .top-description .top-centered .top-title h1 {
+  display: inline-block;
+  padding: 20px 30px;
+  font-size: 4rem;
+  border: 6px solid #ffffff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 0 0 1000px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0 0 0 1000px;
+}
+
+.top-wrapper .top-description .top-centered .top-title p {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.footer {
+  padding: 50px 0;
+}
+/*# sourceMappingURL=main.css.map */
