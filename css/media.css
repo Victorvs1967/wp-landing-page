@@ -17,6 +17,10 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+  body {
+    width: 100%;
+  }
+
   .logo svg {
     width: 40px;
     height: 40px;
@@ -66,12 +70,83 @@
   }
   
   .top-wrapper .top-description .top-centered .top-title h1 {
-    font-size: 2.5rem;
+    font-size: 1.6rem;
   }
   
   .top-wrapper .top-description .top-centered .top-title p {
-    font-size: 1.25rem;
+    font-size: .8rem;
   }
+
+  .title-wrapper h2 {
+    font-size: 1.2rem;
+  }
+  
+  .title-wrapper .sec-description {
+    font-size: .7rem;
+  }
+
+  section .sec-content .brief p {
+    text-align: center;
+  }
+
+  section .sec-content .name {
+    text-align: center;
+  }
+
+	.sec-content .row .left {
+    border: none
+  }
+
+	.sec-content .row {
+    margin: auto;
+  }
+
+	.sec-content {
+		max-width: 90%;
+  }
+
+  .socials {
+    margin-left: 50%;  
+    transform: translateX(-50%);
+  }
+
+  section .sec-content li {
+    text-align: center;
+  }
+
+  .personal .sec-content .left, .personal .sec-content .right {
+			text-align: center;
+  }
+
+  .personal .sec-content .left h3, .personal .sec-content .right h3 {
+			text-align: center;
+  }
+
+  .left .description {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .personal .sec-content .left .profession,
+  .personal .sec-content .right .profession {
+    margin-left: 0;
+  }
+
+  .footer .container {
+    font-size: .6rem;
+    margin-left: 6px;
+  }
+  
+  .footer .socials i {
+    font-size: .8rem;
+    margin-right: 6px;
+  }
+
 }
 
 /* Custom, iPhone Retina */

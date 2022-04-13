@@ -1,9 +1,12 @@
 @import "../bourbon/bourbon"
 
 $color: #FF6347 //Theme skin
-$text_color: #888
+$title_color: #555
+$text_color: #777
 $main_color: #222
 $bg_light: #FAFAFA
+$bg_dark: #AAA
+$bg_black: #363636
 
 @mixin kerning($kerning)
 	letter-spacing: $kerning + px
@@ -49,31 +52,61 @@ svg
 .top-title
 	h1
 		color: $bg_light
+		+animation-delay(.5s)
 	p
 		color: $bg_light
 		+kerning(5)
+		+animation-delay(.8s)
 
 .bg-light
 	background-color: $bg_light
 	color: $main_color
+	p
+		color: $main_color
 
 .bg-dark
-	background-color: $text_color
+	background-color: $bg_dark
 	color: $bg_light
+	p
+		color: $bg_light
 
 .bg-black
-	background-color: $main_color
+	background-color: $bg_black
 	color: $bg_light
+	p
+		color: $bg_light
 
 .sec-description
 	+kerning(4)
 
 .bg-light .sec-description::after
 	background: $main_color
-	a
-		color: $main_color
 
 .bg-dark .sec-description::after
-	background-color: $bg_light
-	a
+	background: $bg_light
+
+.bg-black .sec-description::after
+	background: $bg_light
+
+.sec-content
+	p:nth-child(even)
+		color: $color
+	.col-title
+		color: $text_color
+		+kerning(4)
+	.name
+		color: $title_color
+
+.personal
+	.sec-content
+		h3
+			+kerning(2)
+		p
+			color: $main_color
+		.left
+			border-right: 1px solid $main_color
+
+.item-wrapper
+	.date
+		background-color: $color
 		color: $bg_light

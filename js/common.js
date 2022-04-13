@@ -4,9 +4,17 @@ const mainHead = document.querySelector('.main__head'),
       menuTop = document.querySelector('.menu__top'),
       menuTopItems = menuTop.querySelectorAll('a'),
       loader = document.querySelector('.loader'),
-      loaderInner = document.querySelector('.loader_inner');
+      loaderInner = document.querySelector('.loader_inner'),
+      titleWrapper = document.querySelector('.title-wrapper'),
+      parallax = document.querySelector('.parallax'), // parallax
+      parallaxBg = document.querySelector('.parallax-bg'); // parallax
 
 mainHead.style.minHeight = `${window.screen.height}px`;
+
+AOS.init({
+  duration: 1000,
+  delay: 100,
+});
 
 sandwich.addEventListener('click', () => {
   menuTop.classList.contains('active') ? fadeOut(menuTop, 400) : fadeIn(menuTop, 400);
@@ -14,7 +22,7 @@ sandwich.addEventListener('click', () => {
   menuTop.classList.toggle('active');
   menuTopItems.forEach(item => {
     item.classList.add('animate__fadeInDown', 'animate__animated');
-});
+  });
 });
 
 window.onload = () => {
@@ -26,6 +34,26 @@ window.onload = () => {
 
   fadeOut(loaderInner, 600);
   fadeOut(loader, 600);
+
+  // parallax with scroll
+  if (parallax) {
+    let thresholdSets = [];
+    for (let i = 0; i <= 1.0; i += 0.005) {
+      thresholdSets.push(i);
+    }
+    
+    const callback = (entries, observer) => {
+      const scrollTopPercent = window.pageYOffset / parallax.offsetHeight * 100;
+      setParallaxItemsStyle(scrollTopPercent);
+    };
+
+    const observer = new IntersectionObserver(callback, { threshold: thresholdSets });
+    
+    observer.observe(document.querySelector('section'));
+    
+    const setParallaxItemsStyle = scrollTopPercent => parallaxBg.parentElement.style.cssText = `transform: translate(0%, -${scrollTopPercent / 6}%);`;
+  }
+
 };
 
 menuTopItems.forEach(item => {
@@ -54,3 +82,4 @@ const fadeOut = (el, timeout) => {
     el.style.display = 'none';
   }, timeout);
 };
+

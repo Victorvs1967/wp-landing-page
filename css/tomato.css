@@ -8,7 +8,7 @@ a {
 }
 
 p {
-  color: #888;
+  color: #777;
 }
 
 .color_element {
@@ -32,11 +32,11 @@ svg {
 }
 
 svg circle {
-  stroke: #888;
+  stroke: #777;
 }
 
 svg path {
-  fill: #888;
+  fill: #777;
 }
 
 .menu {
@@ -51,11 +51,15 @@ svg path {
 
 .top-title h1 {
   color: #FAFAFA;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 .top-title p {
   color: #FAFAFA;
   letter-spacing: 5px;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }
 
 .bg-light {
@@ -63,13 +67,25 @@ svg path {
   color: #222;
 }
 
+.bg-light p {
+  color: #222;
+}
+
 .bg-dark {
-  background-color: #888;
+  background-color: #AAA;
+  color: #FAFAFA;
+}
+
+.bg-dark p {
   color: #FAFAFA;
 }
 
 .bg-black {
-  background-color: #222;
+  background-color: #363636;
+  color: #FAFAFA;
+}
+
+.bg-black p {
   color: #FAFAFA;
 }
 
@@ -81,15 +97,41 @@ svg path {
   background: #222;
 }
 
-.bg-light .sec-description::after a {
+.bg-dark .sec-description::after {
+  background: #FAFAFA;
+}
+
+.bg-black .sec-description::after {
+  background: #FAFAFA;
+}
+
+.sec-content p:nth-child(even) {
+  color: #FF6347;
+}
+
+.sec-content .col-title {
+  color: #777;
+  letter-spacing: 4px;
+}
+
+.sec-content .name {
+  color: #555;
+}
+
+.personal .sec-content h3 {
+  letter-spacing: 2px;
+}
+
+.personal .sec-content p {
   color: #222;
 }
 
-.bg-dark .sec-description::after {
-  background-color: #FAFAFA;
+.personal .sec-content .left {
+  border-right: 1px solid #222;
 }
 
-.bg-dark .sec-description::after a {
+.item-wrapper .date {
+  background-color: #FF6347;
   color: #FAFAFA;
 }
 /*# sourceMappingURL=tomato.css.map */
