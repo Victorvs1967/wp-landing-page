@@ -394,8 +394,9 @@ section .sec-content li {
 }
 
 .footer {
-  z-index: 400;
+  z-index: 500;
   height: 100px;
+  padding: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -510,6 +511,7 @@ section .sec-content li {
   margin-right: 1.5rem;
   font-size: 1.2rem;
   line-height: 150%;
+  text-align: right;
 }
 
 .overflow .portfolio__description .portfolio__description-wrapper img {

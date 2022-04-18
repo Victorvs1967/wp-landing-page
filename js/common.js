@@ -70,7 +70,7 @@ portfolioLis.forEach(li => li.addEventListener('click', () => {
 portfolioItems.forEach(item => {
   item.querySelector('a').addEventListener('click', event => {
     fadeIn(overflow, 600);
-    const description = document.querySelector(event.target.href.substring(26));
+    const description = document.querySelector(event.target.hash);
     description.classList.remove('hidden');
     overflow.addEventListener('click', () => {
       description.classList.add('hidden');
