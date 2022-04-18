@@ -110,3 +110,22 @@ svg
 	.date
 		background-color: $color
 		color: $bg_light
+
+.portfolio
+	li
+		color: $text_color
+		+kerning(2)
+		&.active
+			color: $bg_light
+			border-bottom: 1px solid $color
+
+.portfolio__item-content,
+.portfolio__description
+	h3,
+	a
+		color: $color
+		+kerning(2)
+	a
+		border-color: $color !important
+	p
+		color: $text_color !important

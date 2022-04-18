@@ -134,4 +134,32 @@ svg path {
   background-color: #FF6347;
   color: #FAFAFA;
 }
+
+.portfolio li {
+  color: #777;
+  letter-spacing: 2px;
+}
+
+.portfolio li.active {
+  color: #FAFAFA;
+  border-bottom: 1px solid #FF6347;
+}
+
+.portfolio__item-content h3,
+.portfolio__item-content a,
+.portfolio__description h3,
+.portfolio__description a {
+  color: #FF6347;
+  letter-spacing: 2px;
+}
+
+.portfolio__item-content a,
+.portfolio__description a {
+  border-color: #FF6347 !important;
+}
+
+.portfolio__item-content p,
+.portfolio__description p {
+  color: #777 !important;
+}
 /*# sourceMappingURL=tomato.css.map */
