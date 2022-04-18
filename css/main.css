@@ -485,7 +485,7 @@ section .sec-content li {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.8);
-  z-index: 401;
+  z-index: 200;
 }
 
 .overflow .portfolio__description h3 {
