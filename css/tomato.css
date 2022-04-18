@@ -162,4 +162,12 @@ svg path {
 .portfolio__description p {
   color: #777 !important;
 }
+
+.contact__wrapper i {
+  color: #FF6347;
+}
+
+.contact__wrapper a {
+  color: #FF6347;
+}
 /*# sourceMappingURL=tomato.css.map */
