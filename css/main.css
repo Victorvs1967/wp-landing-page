@@ -491,6 +491,8 @@ section .sec-content li {
   font-size: 3rem;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 0;
 }
 
 .overflow .portfolio__description .portfolio__description-wrapper {
@@ -500,7 +502,7 @@ section .sec-content li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 4rem;
+  padding: 2rem;
 }
 
 .overflow .portfolio__description .portfolio__description-wrapper p {
