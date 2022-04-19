@@ -568,9 +568,10 @@ section .sec-content li {
 
 .contact__form input,
 .contact__form textarea {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   padding: 16px 6px;
   font-size: 1rem;
+  border-radius: 4px;
 }
 
 .contact__form button {

@@ -175,6 +175,11 @@ svg path {
   border-right: 1px solid #222;
 }
 
+.contacts .contact__form input,
+.contacts .contact__form textarea {
+  border: 1px solid #777;
+}
+
 .contacts .contact__form button {
   border: 1px solid #FF6347;
 }
