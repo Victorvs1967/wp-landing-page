@@ -1,0 +1,150 @@
+@import "../bourbon/bourbon"
+
+$color: #2ea2cc //Theme skin
+$title_color: #555
+$text_color: #777
+$main_color: #222
+$bg_light: #FAFAFA
+$bg_dark: #AAA
+$bg_black: #363636
+
+@mixin kerning($kerning)
+	letter-spacing: $kerning + px
+
+body
+	color: $main_color
+	+kerning(1)
+
+a
+	color: $color
+
+p
+	color: $text_color
+
+.color_element
+	color: $color
+
+.color_bg
+	background-color: $color
+
+.color_border
+	border-color: $color
+
+.main_color_bg
+	background-color: $main_color
+
+svg
+	fill: rgba(255, 255, 255, .8)
+	circle
+		stroke: $text_color
+	path
+		fill: $text_color
+
+.menu
+	background-color: $main_color
+
+.menu__top
+	a:hover
+		color: $color
+		background-color: rgba(255, 255, 255, .1)
+		+kerning(4)
+
+.top-title
+	h1
+		color: $bg_light
+		+animation-delay(.5s)
+	p
+		color: $bg_light
+		+kerning(5)
+		+animation-delay(.8s)
+
+.bg-light
+	background-color: $bg_light
+	color: $main_color
+	p
+		color: $main_color
+
+.bg-dark
+	background-color: $bg_dark
+	color: $bg_light
+	p
+		color: $bg_light
+
+.bg-black
+	background-color: $bg_black
+	color: $bg_light
+	p
+		color: $bg_light
+
+.sec-description
+	+kerning(4)
+
+.bg-light .sec-description::after
+	background: $main_color
+
+.bg-dark .sec-description::after
+	background: $bg_light
+
+.bg-black .sec-description::after
+	background: $bg_light
+
+.sec-content
+	p:nth-child(even)
+		color: $color
+	.col-title
+		color: $text_color
+		+kerning(4)
+	.name
+		color: $title_color
+
+.personal
+	.sec-content
+		h3
+			+kerning(2)
+		p
+			color: $main_color
+		.left
+			border-right: 1px solid $main_color
+
+.item-wrapper
+	.date
+		background-color: $color
+		color: $bg_light
+
+.portfolio
+	li
+		color: $text_color
+		+kerning(2)
+		&.active
+			color: $bg_light
+			border-bottom: 1px solid $color
+
+.portfolio__item-content,
+.portfolio__description
+	h3,
+	a
+		color: $color
+		+kerning(2)
+	a
+		border-color: $color !important
+	p
+		color: $text_color !important
+
+.contacts
+	.contact__wrapper
+		i
+			color: $color
+		a
+			color: $color
+	.left
+		border-right: 1px solid $main_color
+
+	.contact__form
+		input,
+		textarea
+			border: 1px solid $text_color
+		button
+			border: 1px solid $color
+		button:hover
+			background: $color
+			color: $bg_light

@@ -1,0 +1,191 @@
+body {
+  color: #222;
+  letter-spacing: 1px;
+}
+
+a {
+  color: #2ea2cc;
+}
+
+p {
+  color: #777;
+}
+
+.color_element {
+  color: #2ea2cc;
+}
+
+.color_bg {
+  background-color: #2ea2cc;
+}
+
+.color_border {
+  border-color: #2ea2cc;
+}
+
+.main_color_bg {
+  background-color: #222;
+}
+
+svg {
+  fill: rgba(255, 255, 255, 0.8);
+}
+
+svg circle {
+  stroke: #777;
+}
+
+svg path {
+  fill: #777;
+}
+
+.menu {
+  background-color: #222;
+}
+
+.menu__top a:hover {
+  color: #2ea2cc;
+  background-color: rgba(255, 255, 255, 0.1);
+  letter-spacing: 4px;
+}
+
+.top-title h1 {
+  color: #FAFAFA;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.top-title p {
+  color: #FAFAFA;
+  letter-spacing: 5px;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.bg-light {
+  background-color: #FAFAFA;
+  color: #222;
+}
+
+.bg-light p {
+  color: #222;
+}
+
+.bg-dark {
+  background-color: #AAA;
+  color: #FAFAFA;
+}
+
+.bg-dark p {
+  color: #FAFAFA;
+}
+
+.bg-black {
+  background-color: #363636;
+  color: #FAFAFA;
+}
+
+.bg-black p {
+  color: #FAFAFA;
+}
+
+.sec-description {
+  letter-spacing: 4px;
+}
+
+.bg-light .sec-description::after {
+  background: #222;
+}
+
+.bg-dark .sec-description::after {
+  background: #FAFAFA;
+}
+
+.bg-black .sec-description::after {
+  background: #FAFAFA;
+}
+
+.sec-content p:nth-child(even) {
+  color: #2ea2cc;
+}
+
+.sec-content .col-title {
+  color: #777;
+  letter-spacing: 4px;
+}
+
+.sec-content .name {
+  color: #555;
+}
+
+.personal .sec-content h3 {
+  letter-spacing: 2px;
+}
+
+.personal .sec-content p {
+  color: #222;
+}
+
+.personal .sec-content .left {
+  border-right: 1px solid #222;
+}
+
+.item-wrapper .date {
+  background-color: #2ea2cc;
+  color: #FAFAFA;
+}
+
+.portfolio li {
+  color: #777;
+  letter-spacing: 2px;
+}
+
+.portfolio li.active {
+  color: #FAFAFA;
+  border-bottom: 1px solid #2ea2cc;
+}
+
+.portfolio__item-content h3,
+.portfolio__item-content a,
+.portfolio__description h3,
+.portfolio__description a {
+  color: #2ea2cc;
+  letter-spacing: 2px;
+}
+
+.portfolio__item-content a,
+.portfolio__description a {
+  border-color: #2ea2cc !important;
+}
+
+.portfolio__item-content p,
+.portfolio__description p {
+  color: #777 !important;
+}
+
+.contacts .contact__wrapper i {
+  color: #2ea2cc;
+}
+
+.contacts .contact__wrapper a {
+  color: #2ea2cc;
+}
+
+.contacts .left {
+  border-right: 1px solid #222;
+}
+
+.contacts .contact__form input,
+.contacts .contact__form textarea {
+  border: 1px solid #777;
+}
+
+.contacts .contact__form button {
+  border: 1px solid #2ea2cc;
+}
+
+.contacts .contact__form button:hover {
+  background: #2ea2cc;
+  color: #FAFAFA;
+}
+/*# sourceMappingURL=blue.css.map */
