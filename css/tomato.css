@@ -163,11 +163,24 @@ svg path {
   color: #777 !important;
 }
 
-.contact__wrapper i {
+.contacts .contact__wrapper i {
   color: #FF6347;
 }
 
-.contact__wrapper a {
+.contacts .contact__wrapper a {
   color: #FF6347;
+}
+
+.contacts .left {
+  border-right: 1px solid #222;
+}
+
+.contacts .contact__form button {
+  border: 1px solid #FF6347;
+}
+
+.contacts .contact__form button:hover {
+  background: #FF6347;
+  color: #FAFAFA;
 }
 /*# sourceMappingURL=tomato.css.map */

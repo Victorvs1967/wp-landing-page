@@ -130,8 +130,18 @@ svg
 	p
 		color: $text_color !important
 
-.contact__wrapper
-	i
-		color: $color
-	a
-		color: $color
+.contacts
+	.contact__wrapper
+		i
+			color: $color
+		a
+			color: $color
+	.left
+		border-right: 1px solid $main_color
+
+	.contact__form
+		button
+			border: 1px solid $color
+		button:hover
+			background: $color
+			color: $bg_light
